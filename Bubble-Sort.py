@@ -6,7 +6,7 @@ class Solution:
                 if nums[j]>nums[j+1]:
                     nums[j],nums[j+1]=nums[j+1],nums[j]
                     i_did_swap=1
-            if i_did_swap==0:
+            if i_did_swap==0: # without this 0(n2), with 0(n)
                 break
         return nums
 n=input().strip("[]")
